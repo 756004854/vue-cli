@@ -4,7 +4,7 @@ import Home from "./views/Home.vue";
 import UserHome from "./views/Home.vue";
 import UserProfile from "./views/title1.vue";
 import UserPosts from "./views/title2.vue";
-import goods from "./views/goods.vue"
+import goods from "./views/goods.vue";
 
 Vue.use(Router);
 
@@ -19,15 +19,15 @@ export default new Router({
       children: [
         // UserHome will be rendered inside User's <router-view>
         // when /user/:id is matched
-        { path: '', component: UserHome },
-				
+        { path: "", component: UserHome },
+
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        { path: 'profile', component: UserProfile },
+        { path: "profile", component: UserProfile },
 
         // UserPosts will be rendered inside User's <router-view>
         // when /user/:id/posts is matched
-        { path: 'posts', component: UserPosts }
+        { path: "posts", component: UserPosts }
       ]
     },
     {

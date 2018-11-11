@@ -10,12 +10,11 @@
 <script>
 export default {
   methods: {
-    goOut(){
-      this.$router.go(-1)
+    goOut() {
+      this.$router.go(-1);
     }
   }
-}
-
+};
 </script>
 <style>
 </style>
