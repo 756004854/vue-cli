@@ -1,15 +1,16 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import UserHome from "./views/Home.vue";
-import UserProfile from "./views/title1.vue";
-import UserPosts from "./views/title2.vue";
-import goods from "./views/goods.vue";
+import Home from "@/views/Home.vue";
+import UserHome from "@/views/Home.vue";
+import UserProfile from "@/views/title1.vue";
+import UserPosts from "@/views/title2.vue";
+import goods from "@/views/goods.vue";
+import test from "@/views/test.vue"
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: 'hash',//"history",
   base: process.env.BASE_URL,
   routes: [
     {
@@ -34,6 +35,11 @@ export default new Router({
       path: "/goods",
       name: "goods",
       component: goods
+    },
+    {
+      path: "/test",
+      name: "test",
+      component: test
     },
     {
       path: "/about",
